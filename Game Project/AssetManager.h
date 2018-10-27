@@ -17,7 +17,7 @@ using namespace std;
 
 static class AssetManager {
 private:
-	unordered_map<string, Asset*> allAssets;
+	static unordered_map<string, Asset*> allAssets;
 	/*vector<Armor*> armor;
 	vector<Consumable*> consumable;
 	vector<Item*> item;
@@ -27,6 +27,6 @@ private:
 	vector<Weapon*> weapon;*/
 
 public:
-	void ImportAssets();
+	static void ImportAssets();
 };
 
