@@ -1,7 +1,9 @@
 #pragma once
 
-class NPC {
+#include "Character.h"
+
+class NPC : public Character {
 public:
-	int health;
+	string GetAssetType();
 };
 

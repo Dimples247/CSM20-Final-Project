@@ -1,14 +1,9 @@
 #pragma once
 
-#include <vector>
-#include "Item.h"
+#include "Character.h"
 
-using namespace std;
-
-class Player {
+class Player : public Character {
 public:
-	int health;
-
-	vector<Item> inventory;
+	string GetAssetType();
 };
 
