@@ -115,17 +115,31 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Armor.cpp" />
+    <ClCompile Include="AssetManager.cpp" />
+    <ClCompile Include="Consumable.cpp" />
+    <ClCompile Include="FileUtility.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Location.cpp" />
     <ClCompile Include="NPC.cpp" />
     <ClCompile Include="Player.cpp" />
+    <ClCompile Include="Regex.cpp" />
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Armor.h" />
+    <ClInclude Include="Asset.h" />
+    <ClInclude Include="AssetManager.h" />
+    <ClInclude Include="Character.h" />
+    <ClInclude Include="Consumable.h" />
+    <ClInclude Include="FileUtility.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Location.h" />
     <ClInclude Include="NPC.h" />
     <ClInclude Include="Player.h" />
+    <ClInclude Include="Regex.h" />
+    <ClInclude Include="Weapon.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

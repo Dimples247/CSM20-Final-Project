@@ -1,15 +1,13 @@
 #include <iostream>
-#include <unordered_map>
-#include <string>
+
+#include "FileUtility.h"
 
 using namespace std;
 
-void func(ItemType it) {
-
-}
-
 int main() {
+	FileUtility::CreateNewLogFile();
 
-	func(ItemType::Weapon);
+	
+
+	FileUtility::CloseLogFile();
 }
-

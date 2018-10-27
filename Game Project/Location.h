@@ -1,14 +1,17 @@
 #pragma once
 
 #include <vector>
+#include "Asset.h"
 #include "NPC.h"
 #include "Item.h"
 
 using namespace std;
 
-class Location {
+class Location : public Asset {
 public:
 	vector<NPC> npcs;
 	vector<Item> loot;
+
+	string GetAssetType();
 };
 
