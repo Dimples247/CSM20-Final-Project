@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="AdjacencyMatrix.cpp" />
     <ClCompile Include="Armor.cpp" />
     <ClCompile Include="AssetManager.cpp" />
     <ClCompile Include="Consumable.cpp" />
@@ -128,6 +129,7 @@
     <ClCompile Include="Weapon.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AdjacencyMatrix.h" />
     <ClInclude Include="Armor.h" />
     <ClInclude Include="Asset.h" />
     <ClInclude Include="AssetManager.h" />

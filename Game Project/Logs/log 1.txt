@@ -1,0 +1,5 @@
+MNGR: Begininning asset parsing...
+LOAD: Parsing file '.\Assets\Asset Test 1.txt'
+    : Parsing asset of type 'armor'
+    : Asset '' parsed. Asset is ID#1
+LOAD: The file at '.\Assets\Asset Test 1b.txt' was empty

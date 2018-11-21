@@ -1,3 +1,4 @@
 ﻿  Source.cpp
 c:\users\brody\documents\programming projects\c++\fall 2018\game project\game project\fileutility.h(27): warning C4091: 'static ': ignored on left of 'FileUtility' when no variable is declared
+c:\users\brody\documents\programming projects\c++\fall 2018\game project\game project\assetmanager.h(34): warning C4091: 'static ': ignored on left of 'AssetManager' when no variable is declared
   Game Project.vcxproj -> C:\Users\Brody\Documents\Programming Projects\C++\Fall 2018\Game Project\Debug\Game Project.exe

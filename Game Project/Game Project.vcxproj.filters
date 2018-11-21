@@ -48,6 +48,9 @@
     <ClCompile Include="Item.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="AdjacencyMatrix.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Location.h">
@@ -84,6 +87,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Regex.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AdjacencyMatrix.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

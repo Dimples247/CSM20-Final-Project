@@ -1,0 +1,5 @@
+<Armor>
+	name=Leather Armor
+	description = A set of hide armor fit for the average adventurer
+	amount = 2
+<Armor/>

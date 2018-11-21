@@ -25,7 +25,7 @@ bool FileUtility::IsEmpty(string _filepath) {
 
 string FileUtility::GetFileAsString(string _filepath) {
 	string s;
-	ifstream file("./Test.txt");
+	ifstream file(_filepath);
 	while (file.peek() != -1) {
 		string line;
 		getline(file, line);

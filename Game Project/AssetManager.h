@@ -18,15 +18,18 @@ using namespace std;
 static class AssetManager {
 private:
 	static unordered_map<string, Asset*> allAssets;
-	/*vector<Armor*> armor;
-	vector<Consumable*> consumable;
-	vector<Item*> item;
-	vector<Location*> location;
-	vector<NPC*> npc;
-	vector<Player*> player;
-	vector<Weapon*> weapon;*/
+	static unordered_map<string, int> assetID;
+
+	static unordered_map<Asset*,vector<string>> ParseAssets();
+	static void LinkAssets(unordered_map<Asset*, vector<string>> _unlinkedAssets);
+
+	static vector<Asset*> ReadSubItems(vector<string> _subItems);
 
 public:
 	static void ImportAssets();
+
+	static vector<Asset*> GetAllAssets();
+
+	static int GetAssetID(string _name);
 };
 
