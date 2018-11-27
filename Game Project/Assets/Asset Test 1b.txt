@@ -1,0 +1,7 @@
+<location>
+	name = cottage
+	description = You are in a cozy cottage. A light glow from the hearth illuminates an otherwise dark woom.
+	npcs =
+	enemies = 
+	items = Leather Armor
+<location/>

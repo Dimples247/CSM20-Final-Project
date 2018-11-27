@@ -3,6 +3,7 @@
 #include <iostream>
 #include <filesystem>
 #include <fstream>
+#include <time.h>
 #include "Regex.h"
 
 using namespace std::experimental;
@@ -47,22 +48,21 @@ void FileUtility::CreateDirectory(string _filepath) {
 		filesystem::create_directory(_filepath);
 }
 void FileUtility::CreateNewLogFile() {
-	string logNumber = "0";
-
 	// Check if logs folder exists, if not, create it
-	if (IsDirectory(LOG_FOLDER)) {
-		// If log files already exist, then create a new one with the appropriate file number
-		string filepaths;
-		for (string s : GetFilesInDirectory(LOG_FOLDER))
-			filepaths += s;
-		vector<string> logFileNumbers = Regex::AllOccurances(filepaths, "log (\\d+).txt");
-		logNumber = (logFileNumbers.size() > 0) ? to_string(stoi(logFileNumbers[logFileNumbers.size() - 1]) + 1) : logNumber;
-	} else {
+	if (!IsDirectory(LOG_FOLDER)) {
 		CreateDirectory(LOG_FOLDER);
 	}
 
+	// Get date as char*
+	std::time_t rawtime;
+	std::tm timeinfo;
+	char buffer[80];
+	std::time(&rawtime);
+	localtime_s(&timeinfo, &rawtime);
+	std::strftime(buffer, 80, "%Y-%m-%d-%H-%M-%S", &timeinfo);
+
 	// Open a new log file
-	logFile = ofstream(((string)LOG_FOLDER) + "/log " + logNumber + ".txt");
+	logFile = ofstream(((string)LOG_FOLDER) + "/log " + buffer + ".txt");
 
 	// Redirect iostream::clog to the log file
 	auto old_rdbuf = std::clog.rdbuf();

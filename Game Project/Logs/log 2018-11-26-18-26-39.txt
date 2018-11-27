@@ -1,0 +1,104 @@
+MNGR: Begininning asset parsing...
+LOAD: Parsing file '.\Assets\Asset Test 1.txt'
+    : Parsing asset of type 'armor'
+    : Asset 'Leather Armor' parsed. Asset is ID#1
+    : Parsing asset of type 'armor'
+    : Asset 'Hide Jacket' parsed. Asset is ID#2
+    : Parsing asset of type 'armor'
+    : Asset 'Tattered Cloth Armor' parsed. Asset is ID#3
+    : Parsing asset of type 'consumable'
+    : Asset 'Lesser Potion of Healing' parsed. Asset is ID#4
+    : Parsing asset of type 'enemy'
+    : Asset 'Cave Troll' parsed. Asset is ID#5
+    : Parsing asset of type 'item'
+    : Asset 'Brass Key' parsed. Asset is ID#6
+    : Parsing asset of type 'npc'
+    : Asset 'Auranya Eisenal' parsed. Asset is ID#7
+    : Parsing asset of type 'player'
+    : Asset 'Jeff' parsed. Asset is ID#8
+    : Parsing asset of type 'weapon'
+    : Asset 'Simple Bow' parsed. Asset is ID#9
+    : Parsing asset of type 'weapon'
+    : Asset 'Small Hunting Knife' parsed. Asset is ID#10
+    : Parsing asset of type 'weapon'
+    : Asset 'Rusty Dagger' parsed. Asset is ID#11
+LOAD: Parsing file '.\Assets\Asset Test 1b.txt'
+    : Parsing asset of type 'location'
+    : Asset 'cottage' parsed. Asset is ID#12
+MNGR: Beginning asset linking...
+LINK: Linking asset 'Auranya Eisenal'. Asset is ID#6
+    : ERROR: The sub item token '' was not recognized as referenceing a loaded asset. It's linking will be skipped
+LINK: Linking asset 'Cave Troll'. Asset is ID#4
+    : The sub item token 'Rusty Dagger' was successfully linkedLINK: Linking asset 'Jeff'. Asset is ID#7
+    : The sub item token 'Hide Jacket' was successfully linkedLINK: Linking asset 'cottage'. Asset is ID#11
+    : ERROR: The sub item token '' was not recognized as referenceing a loaded asset. It's linking will be skipped
+    : ERROR: The sub item token '' was not recognized as referenceing a loaded asset. It's linking will be skipped
+    : The sub item token 'Leather Armor' was successfully linkedMNGR: Transferring to asset logging
+
+
+
+
+    -====-
+ Asset Logging
+    -====-
+The following will be a complete catalog of all loaded assets.
+
+[Hide Jacket]
+	description> A simple jacket made of deer hide. It is very thin in some places and no longer provides the protection it once did, but it's warm and you look damn good in it.
+	type> armor
+	amount> 1
+[Leather Armor]
+	description> A set of hide armor fit for the average adventurer
+	type> armor
+	amount> 2
+[Simple Bow]
+	description> 
+	type> weapon
+	amount> 2
+[Tattered Cloth Armor]
+	description> It looks well used, but it's made of thick, sturdy cloth
+	type> armor
+	amount> 1
+[Brass Key]
+	description> A very tarnished brass key. There are no locks in sight, so It's probably not useful for anything.
+	type> item
+[Lesser Potion of Healing]
+	description> A strange liquid that seems to emanate life force. Drinking it might help heal your wounds.
+	type> consumable
+	amount> 4
+[Auranya Eisenal]
+	description> A young woman with long, flowing blonde hair. She seems to be whistling a melodic tune, but you don't recognize the song.
+	type> npc
+	health> 1
+	inventory> 
+[Cave Troll]
+	description> A small grayish creature common to these lands. They typically take shelter in caves or ruins, and are known to be mischevious and often outright hostile towards humans
+	type> enemy
+	health> 3
+	inventory> Rusty Dagger, 
+[Jeff]
+	description> You begin to inspect yourself. You look down at your arms as you inspect your hands, then down at your legs as you shuffle your feet around. Isn't it strange how they move? You note the various muscles contracting in precise patterns to create the simple movements you are making. You are quite awestruck at the complexity of the human physiognomy, but to the average outsider, you currently look like a moron who's confused by their own hands.
+	type> player
+	health> 20
+	inventory> Hide Jacket, 
+[Small Hunting Knife]
+	description> A small knife, intended for skinning and dressing game, but in a pinch, it makes a reasonable weapon.
+	type> weapon
+	amount> 2
+[Rusty Dagger]
+	description> A small, rusty blade, with many nicks in it's edge. It could hardly be described as a knife anymore, but it can still cause harm to the unfortunate soul who rosses its path.
+	type> weapon
+	amount> 1
+[cottage]
+	description> You are in a cozy cottage. A light glow from the hearth illuminates an otherwise dark woom.
+	type> location
+	npcs> 
+	loot> Leather Armor, 
+
+
+-====-
+ Done.
+-====-
+
+12 asset(s) were loaded.
+
