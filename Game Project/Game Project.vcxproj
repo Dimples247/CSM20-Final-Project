@@ -123,6 +123,7 @@
     <ClCompile Include="Consumable.cpp" />
     <ClCompile Include="Enemy.cpp" />
     <ClCompile Include="FileUtility.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Item.cpp" />
     <ClCompile Include="Location.cpp" />
     <ClCompile Include="NPC.cpp" />
@@ -143,6 +144,7 @@
     <ClInclude Include="Consumable.h" />
     <ClInclude Include="Enemy.h" />
     <ClInclude Include="FileUtility.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Item.h" />
     <ClInclude Include="Location.h" />
     <ClInclude Include="NPC.h" />

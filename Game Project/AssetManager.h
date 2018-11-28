@@ -20,7 +20,7 @@ static class AssetManager {
 private:
 	static unordered_map<string, int> assetID;
 
-	static unordered_map<string, Asset*> allAssets;
+	
 
 	static unordered_map<string, Armor*> armorAssets;
 	static unordered_map<string, Consumable*> consumableAssets;
@@ -38,6 +38,8 @@ private:
 	static vector<Asset*> ReadSubItems(vector<string> _subItems);
 
 public:
+	static unordered_map<string, Asset*> allAssets;
+
 	static void ImportAssets();
 
 	static vector<Asset*> GetAllAssets();

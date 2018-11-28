@@ -1,69 +1,134 @@
 <Armor>
+
 	name=Leather Armor
+
 	description = A set of hide armor fit for the average adventurer
+
 	amount = 2
+
 <Armor/>
 
-<armor>
-	name = Hide Jacket
-	description= A simple jacket made of deer hide. It is very thin in some places and no longer provides the protection it once did, but it's warm and you look damn good in it.
-	amount=1
-<armor/>
+
 
 <armor>
-	name = Tattered Cloth Armor
-	description = It looks well used, but it's made of thick, sturdy cloth
-	amount = 1
+
+	name = Hide Jacket
+
+	description= A simple jacket made of deer hide. It is very thin in some places and no longer provides the protection it once did, but it's warm and you look damn good in it.
+
+	amount=1
+
 <armor/>
+
+
+
+<armor>
+
+	name = Tattered Cloth Armor
+
+	description = It looks well used, but it's made of thick, sturdy cloth
+
+	amount = 1
+
+<armor/>
+
+
 
 <Consumable>
+
 	name = Lesser Potion of Healing
 	description = A strange liquid that seems to emanate life force. Drinking it might help heal your wounds.
+
 	amount = 4
+
 <Consumable/>
 
+
+
 <Enemy>
+
 	Name = Cave Troll
+
 	Description = A small grayish creature common to these lands. They typically take shelter in caves or ruins, and are known to be mischevious and often outright hostile towards humans
+
 	Health = 3
-	Inventory=Rusty Dagger
+
+	Inventory = Rusty Dagger , Hide Jacket % 50
+
 <Enemy/>
 
+
+
 <Item>
+
 	name=Brass Key
+
 	description=A very tarnished brass key. There are no locks in sight, so It's probably not useful for anything.
+
 <Item/>
 
+
+
 <npc>
+
 	Name = Auranya Eisenal
+
 	Description = A young woman with long, flowing blonde hair. She seems to be whistling a melodic tune, but you don't recognize the song.
+
 	Inventory=
+
 	Health=1
+
 <npc/>
 
+
+
 <Player>
+
 	name=Jeff
+
 	description=You begin to inspect yourself. You look down at your arms as you inspect your hands, then down at your legs as you shuffle your feet around. Isn't it strange how they move? You note the various muscles contracting in precise patterns to create the simple movements you are making. You are quite awestruck at the complexity of the human physiognomy, but to the average outsider, you currently look like a moron who's confused by their own hands.
+
 	Health = 20
+
 	Inventory = Hide Jacket
+
 <Player/>
 
+
+
 <Weapon>
+
 	name = Simple Bow
+
 	descritpion=A simple bow crafted out of a hardwood branch.
+
 	damage=2
+
 <Weapon/>
 
-<weapon>
-	name = Small Hunting Knife
-	description=A small knife, intended for skinning and dressing game, but in a pinch, it makes a reasonable weapon.
-	damage=2
-<weapon/>
+
 
 <weapon>
+
+	name = Small Hunting Knife
+
+	description=A small knife, intended for skinning and dressing game, but in a pinch, it makes a reasonable weapon.
+
+	damage=2
+
+<weapon/>
+
+
+
+<weapon>
+
 	name = Rusty Dagger
-	description = A small, rusty blade, with many nicks in it's edge. It could hardly be described as a knife anymore, but it can still cause harm to the unfortunate soul who rosses its path.
-	damage = 1;
+
+	description = A small, rusty blade, with many nicks in it's edge. It could hardly be described as a knife anymore, but it can still cause harm to the unfortunate soul who crosses its path.
+
+	damage = 1
+
 <weapon/>
 
 

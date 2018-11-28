@@ -1,6 +1,7 @@
 #pragma once
 
 #include <vector>
+#include "Enemy.h"
 #include "Asset.h"
 #include "NPC.h"
 #include "Item.h"

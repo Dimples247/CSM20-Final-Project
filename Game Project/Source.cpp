@@ -1,5 +1,6 @@
 #include <iostream>
 #include <conio.h>
+#include <vector>
 
 #include "FileUtility.h"
 #include "AssetManager.h"
@@ -12,8 +13,6 @@ int main() {
 	FileUtility::CreateNewLogFile();
 	AssetManager::ImportAssets();
 	FileUtility::CloseLogFile();
-
-
 	
 	/*string userInput;
 	Regex::AllOccurances(userInput, "(\\w*)*");*/
